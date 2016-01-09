@@ -1,12 +1,12 @@
-###Introduction
-#title: "Reproducible Research Project One"
-#author: "Louis Fernandes"
-#date: "January 7, 2016"
-#output: html_document
+##Introduction
+###title: "Reproducible Research Project One"
+###author: "Louis Fernandes"
+###date: "January 7, 2016"
+###output: html_document
 
 This project will analyze two months of personal motion data provided as part of the Coursera "Reproducible Research" course offered January 2016.
 
-###Initial exploration
+##Initial exploration
 
 We begin by loading in the data set. I will convert the time intervals to something a little more friendly here.
 
@@ -47,7 +47,7 @@ text(times[10], 200, paste('Most active interval starts at ', format(maximumInte
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
-###Filling in missing values
+##Filling in missing values
 
 As the assignment points out, and as we noticed previously (as we used `na.rm = TRUE`), this data set has missing values. We will now deal with those missing sections.
 
@@ -90,7 +90,7 @@ text(meanTotalStepsFilled/2, 12.5, paste('Median steps per day: ',
 
 We see that using the mean of a particular day and time interval as a replacement for NA values in steps results in 1.01% more steps per day on average, a slight increase, while the median number of steps per day increases by 1.02%. 
 
-###Weekend vs weekday activity
+##Weekend vs weekday activity
 
 We will now investigate differences in activity between the week and the weekend. We will add a factor variable for "weekday" or "weekend" to our filled data set. We will then plot the time series of activity based on this factor. 
 
